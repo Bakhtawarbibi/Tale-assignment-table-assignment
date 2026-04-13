@@ -1,0 +1,178 @@
+  body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f7f6;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background 0.5s ease;
+     
+  }
+
+  .main-card {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 450px;
+      text-align: center;
+      border: 2px solid #e0e0e0;
+  }
+
+  .btn-magic {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(118, 75, 162, 0.3);
+  }
+
+  .btn-magic:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+  }
+
+  #result-box {
+      margin-top: 25px;
+      padding: 15px;
+      background: #fafafa;
+      border-radius: 15px;
+      border: 1px dashed #bbb;
+      min-height: 80px;
+  }
+
+
+  .abc-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+      gap: 8px;
+      margin-top: 15px;
+  }
+
+
+  .letter {
+      background: #fff;
+      border: 2px solid #ddd;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+  }
+
+  .letter:hover {
+      background: #764ba2;
+      color: white;
+      transform: translateY(-5px) rotate(10deg);
+      border-color: #764ba2;
+  }
+
+  /* Table styling */
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  td {
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+  }
+
+
+
+  .table-card {
+      padding: 15px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-top: 15px;
+      border: 1px solid #e0e0e0;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .table-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .table-card table td {
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+  }
+
+  /* Even/Odd Card */
+  .evenodd-card {
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      width: 200px;
+      margin: 15px auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .evenodd-card.even {
+      background: #4caf50;
+  }
+
+  .evenodd-card.odd {
+      background: #f44336;
+  }
+
+  .evenodd-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  .counting-box {
+      padding: 15px;
+      border-radius: 15px;
+      background: #fff7e6;
+      border: 1px dashed #f0c36d;
+      text-align: center;
+      margin: 15px auto;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .counting-box span {
+      display: inline-block;
+      margin: 2px 5px;
+      padding: 5px 8px;
+      background: #ffe8b3;
+      border-radius: 5px;
+  }
+
+  .counting-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .animate {
+      animation: slideIn 0.5s ease-out;
+  }
+
+  @keyframes slideIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
